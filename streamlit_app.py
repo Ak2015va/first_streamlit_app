@@ -44,7 +44,7 @@ try:
 except ULRError as e:
   streamlit.error()
 
-streamlit.stop()
+
 
 #import snowflake.connector
 
@@ -60,6 +60,7 @@ if streamlit.button('Get Fruit Load List'):
 
 # Allow the end user to add a fruit to the list
 
+streamlit.stop()
 
 add_my_fruit = streamlit.text_input('What fruit would you like to add?','jackfruit')
 streamlit.write('Thanks for adding ', add_my_fruit)
